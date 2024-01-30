@@ -35,7 +35,7 @@ public void tester()
     }
   }
 }
-public boolean isPalindrome(String sWord){
+public boolean palindrome(String sWord){
   if(reverse(sWord).equals(sWord)){return true;}
   return false;
 }
