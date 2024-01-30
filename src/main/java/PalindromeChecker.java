@@ -36,7 +36,9 @@ public void tester()
   }
 }
 public boolean palindrome(String sWord){
+  noStuff(sWord);
   if(reverse(sWord).equals(sWord)){return true;}
+  
   return false;
 }
 public String reverse(String str)
@@ -46,5 +48,15 @@ public String reverse(String str)
     sNew += str.substring(i,i+1);
   }
   return sNew;
+}
+  public String noStuff(String sWord){
+    String aWord = sWord.replaceAll(" ","");
+      String p = "";
+  for(int i = 0; i < aWord.length(); i++){
+    if(Character.isLetter(aWord.charAt(i)) == true){
+      p += aWord.charAt(i);
+    }
+  }
+  return p.toLowerCase();
 }
 }
