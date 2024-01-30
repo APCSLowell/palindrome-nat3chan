@@ -50,11 +50,10 @@ public String reverse(String str)
   return sNew;
 }
   public String noStuff(String sWord){
-    String aWord = sWord.replaceAll(" ","");
       String p = "";
-  for(int i = 0; i < aWord.length(); i++){
-    if(Character.isLetter(aWord.charAt(i)) == true){
-      p += aWord.charAt(i);
+  for(int i = 0; i < sWord.length(); i++){
+    if(Character.isLetter(sWord.charAt(i)) == true){
+      p += sWord.charAt(i);
     }
   }
   return p.toLowerCase();
